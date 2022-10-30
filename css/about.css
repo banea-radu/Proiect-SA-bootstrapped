@@ -1,0 +1,101 @@
+/* || Stilizare main - sectiune welcome */
+.welcome {
+	background-color: #256D6C;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+	.welcome h1 {
+		text-align: center;
+		font-size: 2.5rem;
+		color: #eaeaea;
+	}
+
+	/* || Stilizare main - sectiune welcome - pentru desktop */
+	@media (min-width: 768px) {
+		.welcome h1 {
+		        font-size: 3.5rem;
+		}
+	}
+
+/* || Stilizare main - sectiune staff */
+main {
+	background-color: white;
+}
+
+	.staffs {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.staff {
+	        border: 1px solid #ddd;
+	        border-radius: 5px;
+	        margin-top: 4rem;
+		margin-bottom: 2rem;
+		margin-left: 1rem;
+	  	margin-right: 1rem;
+		padding: 1rem;
+	}
+
+	.staff h3 {
+		width: 50%;
+	        min-width: 150px;
+	        max-width: 200px;
+	        margin-left: auto;
+	  	margin-right: auto;
+		font-size: 1rem;
+		font-weight: 300;
+		text-align: center;
+		background-color: #256D6C;
+		border-radius: 5px;
+		padding: 0.25rem 0;
+		margin-bottom: 1rem;
+		margin-top: -1.5rem;
+		color: #fbb44c;
+	        position: relative;
+	}  
+	
+	.staff .image-wrapper {
+
+
+	}
+
+	.staff img {
+		filter: grayscale(80%);
+	        width: 70vw;
+	        height: 70vw;
+		max-width: 400px;
+		max-height: 400px;
+	        min-width: 150px;
+	        min-height: 150px;
+	    	border-radius: 50%;
+	        display: block;
+	        margin-top: -4rem;
+	        margin-left: auto;
+	  	margin-right: auto;
+	}
+
+	.staff img:hover {
+		filter: grayscale(0);
+	}
+
+	/* || Stilizare main - sectiune staff - pentru desktop */
+	@media (min-width: 768px) {
+		.staffs {
+			flex-direction: row;
+			max-width: 1200px;
+			margin: auto;
+		}
+
+		.staff {
+			flex: 1;
+		}
+
+		.staff img {
+			width: 30vw;
+		        height: 30vw;
+		}
+	}

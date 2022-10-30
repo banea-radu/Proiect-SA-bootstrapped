@@ -1,0 +1,217 @@
+/* || Resetare proprietati default */
+html {
+	scroll-behavior: smooth;
+	background-color: #256D6C;
+	min-width: 355px;
+}
+
+body, h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+/* || Layout */
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+/* || Clase reutilizabile */
+.container {
+	max-width: 1200px;
+	min-width: 320px;
+	margin: auto;
+	padding: 1rem;
+}
+
+/* || Stilizare header */
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #256D6C;
+	z-index: 3;
+}
+
+	header .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/* Meniul si checkbox-ul sunt necesare doar pentru versiunea de mobil. */
+	/* Ascunde link-uri si afiseaza iconita de meniu, la pachet cu checkbox-ul. */
+	header .menu-icon {
+		color: #eaeaea;
+		display: block;
+	}
+
+		header input[type="checkbox"] {
+			display: none;
+		}
+
+		header ul {
+			display: none;
+		}
+ 	header .menu-icon-container {
+        	position: relative;
+	}
+
+	/* Selectare input care are ca atribut type="checkbox." */
+	header input[type="checkbox"] {
+		height: 100%;
+        	width: 100%;
+	        /* Pe mobil checkbox-ul trebuie sa fie prezent pe ecran. */
+	        display: block;
+	        /* Pune checkbox-ul deasupra iconitei de meniu. */
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        /* Opacity 0 doar ascunde vizual elementul, el inca este prezent pe ecran. */
+	        opacity: 0;
+	        margin: 0;
+	        /* Schimba afisajul cursorului mouse-ului. */
+	        cursor: pointer;
+	}
+	
+    	/* input:checked ~ ul => aplica CSS-ul doar pe FRATII 'ul' (de acelasi nivel) lui input:checked aflati SUB el ca ordine. */
+	header input[type="checkbox"]:checked ~ ul {
+        	display: block;
+	        width: 100%;
+	        position: fixed;
+        	/* Afiseaza meniul extins sub header, calculat ca dimensiunea header-ului + padding. */
+	        top: calc(45px + 2 * 1rem);
+	        left: 0;
+	        background-color: #266464;
+	}
+
+	header input[type="checkbox"] {
+		display: block;
+	}
+
+	header a {
+		font-size: 1rem;
+		color: #eaeaea;
+		padding: 1rem;
+	}
+
+		header a:hover {
+			color: #fbb44c;
+		}
+
+	/* || Stilizare header - pentru desktop */
+	@media (min-width: 768px) {
+		/* Ascunde link-uri si afiseaza iconita de meniu, la pachet cu checkbox-ul. */
+		header ul {
+			display: flex;
+		}
+	
+		header .menu-icon {
+	        	display: none;
+		}
+
+		header input[type="checkbox"] {
+			display: none;
+		}
+	}
+
+/* || Stilizare footer */
+footer .container {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	max-width: 800px;
+}
+
+	footer a {
+		color: #eaeaea;
+	}
+
+		footer a:hover {
+			color: #fbb44c;
+			margin: 0.25rem;
+		}
+
+	.footer-links, .footer-social, footer form {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0.4rem;
+	}
+  
+	footer form {
+		flex-direction: column;
+		min-width: 300px;
+	}
+
+		footer form h3 {
+			margin-bottom: 1rem;
+		}
+
+		footer form input {
+			padding: 0.5rem;
+			margin: 0.25rem;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			width: 70%;
+		}
+
+		footer form input[type="submit"] {
+			font-size: 1rem;
+			text-align: center;
+			color: white;
+			background-color: #2bb686;
+			border: 2px solid #2bb686;
+			border-radius: 5px;
+			padding: 0.5rem;
+			width: 100px;
+		}
+
+			footer form input[type="submit"]:hover {
+				background-color: transparent;
+			}
+
+	.footer-links {
+		flex-direction: column;
+		min-width: 150px;
+	}
+
+		footer .footer-links p {
+			padding: 0.25rem;
+		}
+
+	.footer-social {
+		min-width: 150px;
+	}
+
+	/* || Stilizare footer pentru desktop */
+	@media (min-width: 768px) {
+		footer .container {
+			flex-direction: row;
+		}
+	
+		/* Muta Newsletter pe ultimul loc (in dreapta). */
+		footer form {
+			order: 1;
+		}
+	}
