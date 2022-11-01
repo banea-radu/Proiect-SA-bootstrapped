@@ -13,7 +13,7 @@ let curSlide = 0;
 let maxSlide = slides.length - 1;
 
 // Apasarea butonului next
-const nextSlide = document.querySelector(".button-next");
+const nextSlide = document.querySelector(".carousel-control-next");
 nextSlide.addEventListener("click", function () {
 	if (curSlide === maxSlide) {
 		curSlide = 0;
@@ -27,7 +27,7 @@ nextSlide.addEventListener("click", function () {
 });
 
 // Apasarea butonului prev
-const prevSlide = document.querySelector(".button-prev");
+const prevSlide = document.querySelector(".carousel-control-prev");
 prevSlide.addEventListener("click", function () {
 	if (curSlide === 0) {
 		curSlide = maxSlide;

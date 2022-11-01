@@ -8,138 +8,141 @@
     	<!-- Include iconite -->
     	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
     	<!-- Include CSS-uri -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
       	<link rel="stylesheet" href="../css/main.css" >
       	<link rel="stylesheet" href="../css/contact.css" >
 		<!-- Include Javascript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
 		<script src="../js/nesletter_form_validation.js" defer></script>
 		<script src="../js/contact_form_validation.js" defer></script>
 </head>
     
 <body>
-	<header>
-      		<div class="container">
-        		<a href="../index.html">
-        			<strong> Tenis De Masă Sibiu </strong>
-        		</a>
-        		<nav class="menu-icon-container">
-          			<!-- Iconita de meniu + checkbox-ul sunt pentru mobil. -->
-          				<span class="material-icons menu-icon"> menu </span>
-          				<input type="checkbox">
-          			<ul>
-            				<li>
-              					<a href="../index.html"> Acasă </a>
-	            			</li>
-            				<li>
-              					<a href="about.html"> Despre Noi </a>
-	            			</li>
-        	    			<li>
-	        	      			<a href="#"> Contact </a>
-	            			</li>
-	          		</ul>
+	<header class="position-fixed container-fluid">
+    	<div class="container-xxl d-flex justify-content-between align-items-center">
+       		<a class="d-block p-3 text-white text-decoration-none link-warning" href="../index.html">
+       			<strong> Tenis De Masă Sibiu </strong>
+       		</a>
+        	<nav class="position-relative">
+          		<!-- Iconita de meniu + checkbox-ul sunt pentru mobil. -->
+          		<span class="material-icons text-light"> menu </span>
+				<input type="checkbox" class="container-xxl position-absolute h-100 top-0 start-0 opacity-0" aria-pressed="true" role="button">
+          		<ul class="list-unstyled">
+            		<li>
+       					<a href="../index.html" class="d-block p-3 text-white text-decoration-none link-warning"> Acasă </a>
+	       			</li>
+       				<li>
+       					<a href="about.html" class="d-block p-3 text-white text-decoration-none link-warning"> Despre Noi </a>
+	       			</li>
+        			<li>
+	   	      			<a href="#" class="d-block p-3 text-white text-decoration-none link-warning"> Contact </a>
+	       			</li>
+	       		</ul>
 			</nav>
 		</div>
 	</header>
 
 	<main>
-		<section class="welcome">
-			<div class="container">
-          			<h1> Contact </h1>
-	       		</div>
-		</section>
-		<section class="contact">
-			<div class="container">
-          			<h2> Informaţii generale </h2>
-          			<p class="main-paragraph">
-	            			Nu ai găsit ce căutai sau te putem ajuta şi cu alte informaţii?
-        	    			Suntem aici să te ajutăm.
-          			</p>
+    	<section class="welcome d-flex justify-content-center align-items-center">
+       		<div class="text-white">
+       			<h1> Contact </h1>
+	   		</div>
+      	</section>
+		<section class="contact bg-white p-2">
+			<div class="text-center">
+          		<h2> Informaţii generale </h2>
+          		<p class="main-paragraph">
+	        		Nu ai găsit ce căutai sau te putem ajuta şi cu alte informaţii?
+        			Suntem aici să te ajutăm.
+          		</p>
 			</div>
-                	<div class="contact-wrapper">
-				<div class="contact-info">
+            <div class="contact-wrapper d-flex flex-column flex-lg-row align-items-center justify-content-center">
+				<div class="contact-info d-flex flex-column w-100 text-center mx-4 mb-5">
 					<p class="contact-title"><strong>  Ne poţi găsi la: </strong></p>
-					<ul>
-						<li>
-	                				<p>
-        	          					<span class="material-icons"> phone_iphone </span>
-	        	          				Mobil:
-        	        				</p>
-                					<a href="tel:0765429860" title="Call 0040765429860"> +40 765 429 860 </a>
+					<ul class="ps-0">
+						<li class="d-flex justify-content-between align-items-center border-bottom py-1">
+	                		<p class="m-0">
+        	        			<span class="material-icons align-middle"> phone_iphone </span>
+	        	    			Mobil:
+        	        		</p>
+                			<a class="text-secondary link-warning" href="tel:0765429860" title="Call 0040765429860"> +40 765 429 860 </a>
 						</li>
-						<li>
-        	        				<p>
-                	  					<span class="material-icons"> email </span>
-	                	  				E-mail:
-        	        				</p>
-                					<a href="mailto:binta.claudia@gmail.com"> binta.claudia@gmail.com </a>
+						<li class="d-flex justify-content-between align-items-center border-bottom py-1">
+        	        		<p class="m-0">
+								<span class="material-icons align-middle"> email </span>
+	                	  		E-mail:
+        	        		</p>
+                			<a class="text-secondary link-warning" href="mailto:binta.claudia@gmail.com"> binta.claudia@gmail.com </a>
 						</li>
-						<li>
-                					<p>
-                  						<span class="material-icons"> facebook </span>
-	                  					Facebook:
-	                				</p>
-        	        				<a href="https://www.facebook.com/instructortenisdemasasibiu" target="_blank"> /instructortenisdemasasibiu </a>
+						<li class="d-flex justify-content-between align-items-center border-bottom">
+                			<p class="m-0">
+                  				<span class="material-icons align-middle"> facebook </span>
+	                  			Facebook:
+	                		</p>
+        	        		<a class="text-secondary link-warning" href="https://www.facebook.com/instructortenisdemasasibiu" target="_blank"> /instructortenisdemasasibiu </a>
 						</li>
-						<li>
-                					<p>
-                  						<span class="material-icons"> schedule </span>
-                  						Program:
-	                				</p>
-	        	        			<p class="description">
+						<li class="d-flex justify-content-between align-items-center border-bottom py-1">
+                			<p class="m-0">
+                  				<span class="material-icons align-middle"> schedule </span>
+                  				Program:
+	                		</p>
+							<p class="description m-0">
 								Marţi 16:30 - 20:00
 								<br>&nbsp;&nbsp;&nbsp;
 								Joi 16:30 - 20:00
 							</p>
 						</li>
-						<li>
-        	        				<p>
-                	  					<span class="material-icons"> location_on </span>
-	                	  				Locaţia:
-        	        				</p>
-	                				<a class="description" href="https://goo.gl/maps/qDg4pNhqZoJK9GuZA" target="_blank"> August Treboniu Laurian 2-4, Sibiu </a>
-        	      				</li>
-		            		</ul>
+						<li class="d-flex justify-content-between align-items-center border-bottom py-1">
+        	        		<p class="m-0">
+                	  			<span class="material-icons align-middle"> location_on </span>
+	                			Locaţia:
+        	        		</p>
+	                		<a class="description text-secondary link-warning" href="https://goo.gl/maps/qDg4pNhqZoJK9GuZA" target="_blank"> August Treboniu Laurian 2-4, Sibiu </a>
+        	      		</li>
+		            </ul>
 					<iframe
-						class="google-maps"
+						class="google-maps border border-success rounded"
 						src="https://maps.google.com/maps?q=Strada%20August%20Treboniu%20Laurian%202-4,%20Sibiu,%20Romania&t=&z=15&ie=UTF8&iwloc=&output=embed">
-			                </iframe>
+			        </iframe>
 				</div>
-        	    		<form class="contact-form">
-					<p class="contact-form-title"> <strong> Ne poţi scrie completând formularul: </strong></p>
-              				<label for="name"> Nume Prenume: </label>
-	              			<input type="text" placeholder="Ex: Popescu Ion" id="name" >
-	              			<label for="email"> Adresa de E-mail: </label>
-	              			<input type="email" placeholder="Ex: popescu.ion@gmail.com" id="email">
-	              			<label for="subject"> Subiect: </label>
-	              			<input type="text" placeholder="Ex: Subiectul tău" id="subject" >
-	              			<label for="message"> Mesajul tău: </label>
-	              			<textarea id="message" ></textarea>
-	              			<input type="submit" value="Trimite" id="submit">
-	            		</form>
-          		</div>
+        	    <form class="contact-form d-flex flex-column m-2 w-100">
+					<p class="contact-form-title text-center"> <strong> Ne poţi scrie completând formularul: </strong></p>
+              			<label for="name"> Nume Prenume: </label>
+	            		<input class="p-2 border border-success rounded mb-2" type="text" placeholder="Ex: Popescu Ion" id="name" >
+	            		<label for="email"> Adresa de E-mail: </label>
+	            		<input class="p-2 border border-success rounded mb-2" type="email" placeholder="Ex: popescu.ion@gmail.com" id="email">
+	            		<label for="subject"> Subiect: </label>
+	            		<input class="p-2 border border-success rounded mb-2" type="text" placeholder="Ex: Subiectul tău" id="subject" >
+	            		<label for="message"> Mesajul tău: </label>
+	            		<textarea class="p-2 border border-success rounded mb-2" id="message" ></textarea>
+	            		<input class="text-white rounded p-1 border border-success border-2 bg-success bg-gradient link-warning w-25" type="submit" value="TRIMITE" id="submit">
+	            </form>
+          	</div>
 		</section>
 	</main>
 
-	<footer>
-		<div class="container">
-			<form>
+	<footer class="text-white">
+		<div class="d-flex flex-column justify-content-center align-items-center">
+			<form class="d-flex flex-column align-items-center p-2">
 				<h3> Abonează-te la newsletter! </h3>
-				<input type="text" placeholder="Numele tău" id="name-newsletter">
-				<input type="email" placeholder="Adresa de E-mail" id="email-newsletter">
-				<input type="submit" value="Abonare" id="submit-newsletter">
+				<input type="text" placeholder="Numele tău" id="name-newsletter" class="w-70 p-2 m-1 border border-success rounded">
+				<input type="email" placeholder="Adresa de E-mail" id="email-newsletter" class="w-70 p-2 m-1 border border-success rounded">
+				<input type="submit" value="ABONARE" id="submit-newsletter" class="text-white rounded p-1 border border-success border-2 bg-success bg-gradient link-warning">
 			</form>
-			<div class="footer-links">
-				<a href="../index.html">
-          				<p> Acasă </p>
-        			</a>
-        			<a href="about.html">
-          				<p> Despre Noi </p>
-        			</a>
-        			<a href="#">
-          				<p> Contact </p>
-        			</a>
+		<div class="d-flex align-items-center">
+			<div class="footer-links d-flex flex-column align-items-center p-2">
+				<a href="../index.html" class="text-white text-decoration-none link-warning">
+          			<p class="m-0"> Acasă </p>
+        		</a>
+        		<a href="about.html" class="text-white text-decoration-none link-warning">
+          			<p class="m-0"> Despre Noi </p>
+        		</a>
+        		<a href="#" class="text-white text-decoration-none link-warning">
+          			<p class="m-0"> Contact </p>
+        		</a>
 			</div>
-			<div class="footer-social">
-        			<a href="https://www.facebook.com/instructortenisdemasasibiu" target="_blank">
+			<div class="footer-social d-flex flex-row justify-content-center p-2">
+           		<a href="https://www.facebook.com/instructortenisdemasasibiu" target="_blank" class="text-white link-warning">
 					<svg width="35" height="35" viewBox="0 0 50 50">
 						<path d="M 30.140625 2 C 26.870375 2 24.045399 2.9969388 22.0625 4.9667969 C 20.079601 6.936655 
 							19 9.823825 19 13.367188 L 19 18 L 13 18 A 1.0001 1.0001 0 0 0 12 19 L 12 27 A 1.0001 1.0001 
@@ -155,9 +158,10 @@
 							fill="currentColor">
 						</path>
 					</svg>
-        			</a>
-        			<a href="https://www.instagram.com/claudia_antrenor_tenis_de_masa/" target="_blank">
-          				<svg width="47" height="38" viewBox="0 0 50 50">
+        		</a>
+				<i class="bi bi-facebook"></i>
+        		<a href="https://www.instagram.com/claudia_antrenor_tenis_de_masa/" target="_blank" class="text-white link-warning">
+          			<svg width="47" height="38" viewBox="0 0 50 50">
 						<path
 							d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 
 							C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 
@@ -170,8 +174,8 @@
 							fill="currentColor">
 						</path>
 					</svg>
-        			</a>
-        			<a href="https://wa.me/40765429860?text=Bună%20Claudia,%20te%20contactez%20în%20legătură%20cu%20" target="_blank">
+        		</a>
+        		<a href="https://wa.me/40765429860?text=Bună%20Claudia,%20te%20contactez%20în%20legătură%20cu%20" target="_blank" class="text-white link-warning">
 					<svg width="45" height="35" viewBox="0 0 50 50">
 						<path
 							d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 29.079097 3.1186875 32.88588 4.984375 36.208984 
@@ -226,12 +230,13 @@
 							fill="currentColor">
 						</path>
 					</svg>
-        			</a>
+        		</a>
 			</div>
-    		</div>
-      		<div class="container">
-      			<p> SC Believe IT SRL © 2022. Toate drepturile rezervate.</p>
-    		</div>
+			</div>
+    	</div>
+      	<div class="">
+      		<p class="text-center m-0 p-4"> SC Believe IT SRL © 2022. Toate drepturile rezervate.</p>
+    	</div>
 	</footer>
     
 </body>

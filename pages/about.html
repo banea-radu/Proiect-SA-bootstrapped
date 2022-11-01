@@ -8,48 +8,50 @@
     	<!-- Include iconite -->
     	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
     	<!-- Include CSS-uri -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
       	<link rel="stylesheet" href="../css/main.css" >
       	<link rel="stylesheet" href="../css/about.css" >
 		<!-- Include Javascript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
 		<script src="../js/nesletter_form_validation.js" defer></script>
 </head>
     
 <body>
-	<header>
-      		<div class="container">
-        		<a href="../index.html">
-        			<strong> Tenis De Masă Sibiu </strong>
-        		</a>
-        		<nav class="menu-icon-container">
-          			<!-- Iconita de meniu + checkbox-ul sunt pentru mobil. -->
-          				<span class="material-icons menu-icon"> menu </span>
-          				<input type="checkbox">
-          			<ul>
-            				<li>
-              					<a href="../index.html"> Acasă </a>
-	            			</li>
-            				<li>
-              					<a href="#"> Despre Noi </a>
-	            			</li>
-        	    			<li>
-	        	      			<a href="contact.html"> Contact </a>
-	            			</li>
-	          		</ul>
+	<header class="position-fixed container-fluid">
+    	<div class="container-xxl d-flex justify-content-between align-items-center">
+       		<a class="d-block p-3 text-white text-decoration-none link-warning" href="../index.html">
+       			<strong> Tenis De Masă Sibiu </strong>
+       		</a>
+        	<nav class="position-relative">
+          		<!-- Iconita de meniu + checkbox-ul sunt pentru mobil. -->
+          		<span class="material-icons text-light"> menu </span>
+				<input type="checkbox" class="container-xxl position-absolute h-100 top-0 start-0 opacity-0" aria-pressed="true" role="button">
+          		<ul class="list-unstyled">
+            		<li>
+       					<a href="../index.html" class="d-block p-3 text-white text-decoration-none link-warning"> Acasă </a>
+	       			</li>
+       				<li>
+       					<a href="#" class="d-block p-3 text-white text-decoration-none link-warning"> Despre Noi </a>
+	       			</li>
+        			<li>
+	   	      			<a href="contact.html" class="d-block p-3 text-white text-decoration-none link-warning"> Contact </a>
+	       			</li>
+	       		</ul>
 			</nav>
 		</div>
 	</header>
 
 	<main>
-      		<section class="welcome">
-        		<div class="container">
-          			<h1> Despre Noi </h1>
-	       		</div>
-      		</section>
-      		<section class="staffs">
-			<div class="staff">
-				<img src="../img/claudia_binta.jpg" alt="Claudia Bînţă">
-       	        		<h3>Claudia Bînţă</h3>
-                		<p>
+    	<section class="welcome d-flex justify-content-center align-items-center">
+       		<div class="text-white">
+       			<h1> Despre Noi </h1>
+	   		</div>
+      	</section>
+      	<section class="staffs d-flex flex-column flex-lg-row bg-white">
+			<div class="staff border border-1 rounded p-2 mt-5 me-3 mb-4 ms-3">
+				<img class="d-block rounded-circle ms-auto me-auto" src="../img/claudia_binta.jpg" alt="Claudia Bînţă">
+       	        <h6 class="position-relative ms-auto me-auto fw-light text-center rounded-2 p-1 mb-2 text-warning"> Claudia Bînţă </h6>
+                <p>
 					Eu sunt Claudia și sunt îndrăgostită de tenisul de masă de la vârsta de 7 ani.
 					<br><br>
 					Am practicat tenisul de masă de performanță până la vârsta de 17 ani. Am câștigat 
@@ -64,11 +66,11 @@
 					Cred cu tărie că fiecare dintre noi are un potențial care stă să iasă 
 					la suprafață și te invit să-l descoperim prin tenis.
 				</p>
-              		</div>
-			<div class="staff">
-				<img src="../img/sala_tenis_de_masa_sibiu.jpg" alt="AREA B52">
-       	        		<h3> AREA B52 </h3>
-                		<p>
+            </div>
+			<div class="staff border border-1 rounded p-2 mt-5 me-3 mb-4 ms-3">
+				<img class="d-block rounded-circle ms-auto me-auto" src="../img/sala_tenis_de_masa_sibiu.jpg" alt="AREA B52">
+       	        <h6 class="position-relative ms-auto me-auto fw-light text-center rounded-2 p-1 mb-2 text-warning"> AREA B52 </h6>
+                <p>
 					Sala de tenis de masă a fost amenajată cu podea specială TARAFLEX Gerflor de culoare "FRAMBOISE". 
 					<br><br>
 					Această podea, utilizată în sălile acreditate pentru organizarea de competiții internaționale, 
@@ -80,31 +82,32 @@
 					<br><br>
 					Distanța dintre mese este de 2 metri, ceea ce crește gradul de confort al jucătorului.
 				</p>
-              		</div>
-     		</section>
+            </div>
+     	</section>
 	</main>
 
-	<footer>
-		<div class="container">
-			<form>
+	<footer class="text-white">
+		<div class="d-flex flex-column justify-content-center align-items-center">
+			<form class="d-flex flex-column align-items-center p-2">
 				<h3> Abonează-te la newsletter! </h3>
-				<input type="text" placeholder="Numele tău" id="name-newsletter">
-				<input type="email" placeholder="Adresa de E-mail" id="email-newsletter">
-				<input type="submit" value="Abonare" id="submit-newsletter">
+				<input type="text" placeholder="Numele tău" id="name-newsletter" class="w-70 p-2 m-1 border border-success rounded">
+				<input type="email" placeholder="Adresa de E-mail" id="email-newsletter" class="w-70 p-2 m-1 border border-success rounded">
+				<input type="submit" value="ABONARE" id="submit-newsletter" class="text-white rounded p-1 border border-success border-2 bg-success bg-gradient link-warning">
 			</form>
-			<div class="footer-links">
-				<a href="../index.html">
-          				<p> Acasă </p>
-        			</a>
-        			<a href="#">
-          				<p> Despre Noi </p>
-        			</a>
-        			<a href="contact.html">
-          				<p> Contact </p>
-        			</a>
+		<div class="d-flex align-items-center">
+			<div class="footer-links d-flex flex-column align-items-center p-2">
+				<a href="../index.html" class="text-white text-decoration-none link-warning">
+          			<p class="m-0"> Acasă </p>
+        		</a>
+        		<a href="#" class="text-white text-decoration-none link-warning">
+          			<p class="m-0"> Despre Noi </p>
+        		</a>
+        		<a href="contact.html" class="text-white text-decoration-none link-warning">
+          			<p class="m-0"> Contact </p>
+        		</a>
 			</div>
-			<div class="footer-social">
-        			<a href="https://www.facebook.com/instructortenisdemasasibiu" target="_blank">
+			<div class="footer-social d-flex flex-row justify-content-center p-2">
+           		<a href="https://www.facebook.com/instructortenisdemasasibiu" target="_blank" class="text-white link-warning">
 					<svg width="35" height="35" viewBox="0 0 50 50">
 						<path d="M 30.140625 2 C 26.870375 2 24.045399 2.9969388 22.0625 4.9667969 C 20.079601 6.936655 
 							19 9.823825 19 13.367188 L 19 18 L 13 18 A 1.0001 1.0001 0 0 0 12 19 L 12 27 A 1.0001 1.0001 
@@ -120,9 +123,10 @@
 							fill="currentColor">
 						</path>
 					</svg>
-        			</a>
-        			<a href="https://www.instagram.com/claudia_antrenor_tenis_de_masa/" target="_blank">
-         				<svg width="47" height="38" viewBox="0 0 50 50">
+        		</a>
+				<i class="bi bi-facebook"></i>
+        		<a href="https://www.instagram.com/claudia_antrenor_tenis_de_masa/" target="_blank" class="text-white link-warning">
+          			<svg width="47" height="38" viewBox="0 0 50 50">
 						<path
 							d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 
 							C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 
@@ -135,8 +139,8 @@
 							fill="currentColor">
 						</path>
 					</svg>
-        			</a>
-        			<a href="https://wa.me/40765429860?text=Bună%20Claudia,%20te%20contactez%20în%20legătură%20cu%20" target="_blank">
+        		</a>
+        		<a href="https://wa.me/40765429860?text=Bună%20Claudia,%20te%20contactez%20în%20legătură%20cu%20" target="_blank" class="text-white link-warning">
 					<svg width="45" height="35" viewBox="0 0 50 50">
 						<path
 							d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 29.079097 3.1186875 32.88588 4.984375 36.208984 
@@ -191,12 +195,13 @@
 							fill="currentColor">
 						</path>
 					</svg>
-        			</a>
+        		</a>
 			</div>
-    		</div>
-      		<div class="container">
-      			<p> SC Believe IT SRL © 2022. Toate drepturile rezervate.</p>
-    		</div>
+			</div>
+    	</div>
+      	<div class="">
+      		<p class="text-center m-0 p-4"> SC Believe IT SRL © 2022. Toate drepturile rezervate.</p>
+    	</div>
 	</footer>
     
 </body>

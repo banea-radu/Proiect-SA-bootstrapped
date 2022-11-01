@@ -1,257 +1,69 @@
-/* || Stilizare main - sectiune welcome */
-.welcome {
-	height: 100vh;
-	width: 100%;
-	background-color: #256D6C;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	padding-bottom: 4rem;
+/* Workaround sa fie trimitearea din anchor (buton in cazul nostru) la o anumita parte din pagina, 
+luand in calcul si un offset din cauza header-ului fix.
+https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html */
+html {
+	scroll-padding-top: 60px;
 }
-
-	.welcome h1 {
-		color: #ffffff;
-		font-size: 2.5rem;		
-	}
-
-	.welcome p {
-		color: #ffffff;
-		font-size: 1rem;
-		margin-bottom: 1rem;
-	}
-
-	.button {
-		margin-top: 1.625rem;
-		color: #eaeaea;
-		background-color: #2bb686;
-		font-size: 0.875rem;
-		text-align: center;
-		padding: 1rem;
-		border: 2px solid #2bb686;
-		border-radius: 5px;
-		width: 220px;
-	}
-
-		.button:hover {
-    		background-color: transparent;
-		}
-
-		.button:active {
-    		transform: scale(1.1);
-		}
-			
-		/* Workaround sa fie trimitearea din anchor (buton in cazul nostru) la o anumita parte din pagina, 
-		luand in calcul si un offset din cauza header-ului fix.
-		https://getpublii.com/blog/one-line-css-solution-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header.html */
-		html {
-			scroll-padding-top: 4rem;
-		}
-
-	/* || Stilizare main - sectiune welcome - pentru desktop */
-	@media (min-width: 768px) {
-		.welcome h1 {
-        		font-size: 4rem;
-		}
-	}
-
+	
 /* || Stilizare main - sectiune slider */
-.slider-container {
-	padding-top: 2rem;
-	height: 90vh;
-	display: grid;
-	place-items: center;
+.slide {
+	transition: all 0.5s;
 }
-
-	.slider {
-		width: 85%;
-		max-width: 500px;
-		height: 350px;
-		position: relative;
-		overflow: hidden;
-		border-radius: 8px;
-		border: 1px solid #ddd;
-		box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-	}
-
-		.slide {
-			width: 100%;
-			max-width: 800px;
-			height: 350px;
-			border-radius: 8px;
-			background-color: white;
-			position: absolute;
-			transition: all 0.5s;
-			background-color: #256D6C;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-		}
-		
-			.slide h1 {
-				color: #ffffff;
-				font-size: 2.5rem;
-				text-align: center;
-				padding-left: 4rem;
-				padding-right: 4rem;
-			}
-			
-	.slider-button {
-		position: absolute;
-		width: 40px;
-		height: 40px;
-		border: none;
-		border-radius: 50%;
-		cursor: pointer;
-		background-color: #fff;
-		opacity: 0.3;
-	}
-
-		.slider-button img {
-			width: 16px;
-			height: 16px;
-		}
-		
-		.slider-button:hover {
-			opacity: 1;
-		}
-		
-		.slider-button:active {
-			transform: scale(1.2);
-		}
-
-		.button-prev {
-			top: 45%;
-			left: 2%;
-			padding-top: 3px;
-			padding-right: 13px;
-		}
-
-		.button-next {
-			top: 45%;
-			right: 2%;
-			padding-top: 3px;
-			padding-left: 13px;
-		}
-		
-		.slide .button {
-			max-width: 150px;
-		}
-		
 
 /* || Stilizare main - sectiune beneficii */
-.beneficii {
-	background-color: #ffffff;
-	padding-top: 2rem;
-	display: flex;
-	flex-direction: column;
+.beneficii img {
+	filter: grayscale(70%);
 }
 
-	.beneficii .container {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 1.5rem;
-		padding-top: 2rem;
+	.beneficii img:hover {
+		filter: grayscale(0);
+	}
+				
+.scrolling-text-wrapper {
+	height: 35px;
+	width: 300px;
+}
+		
+	.scrolling-text {
+		line-height:35px;
+		-webkit-animation: scroll-text 14s linear infinite; /* pentru safari iOS */
+		animation: scroll-text 14s linear infinite;
 	}
 
-		.beneficii .container h2 {
-			margin-bottom: 1rem;
-			text-align: center;
-		}
-		
-		.beneficii .container h4 {
-			text-align: center;
-		}
-	
-		.beneficii .container img {
-			filter: grayscale(70%);
-			width: 100%;
-		    border-radius: 10px;
-			margin-bottom: 1rem;
-		}
-	
-			.beneficii .container img:hover {
-				filter: grayscale(0);
-			}
-		
-		.beneficii .container span a {
-			font-weight: bold;
-			color: #fbb44c;
-			display: inline;
-		}
-
-		.beneficii .container span a:hover {
-			color: black;
-		}
-
-		.beneficii .container .cursuri {
-			text-align: center;
-		}
-		
-		.scrolling-text-wrapper {
-			position: relative;
-			overflow: hidden;
-			height: 35px;
-			width: 300px;
-			border: 1px solid #ddd;
-			margin: auto;
-		}
-		
-		.scrolling-text {
-			position: absolute;
-			white-space: nowrap;
-			line-height:35px;
-			-webkit-animation: scroll-text 14s linear infinite; /* for iOS */
-			animation: scroll-text 14s linear infinite;
-		}
-
-			/* for iOS */
+			/* pentru safari iOS */
 			@-webkit-keyframes scroll-text {
-				0% { -webkit-transform: translateX(100%); }
+				0% { -webkit-transform: translateX(50%); }
 				100% { -webkit-transform: translateX(-100%); }
 			}
 			
 			@keyframes scroll-text {
-				0% { transform: translateX(100%); }
+				0% { transform: translateX(50%); }
 				100% { transform: translateX(-100%); }
 			}
 
 	/* || Stilizare main - sectiune beneficii - pentru desktop */
-	@media (min-width: 768px) {
-		html {
-			scroll-padding-top: 6rem;
+	@media (min-width: 992px) {
+		.beneficii .container {
+			display: grid;
+			grid-template-areas:
+				'image title'
+				'image text';
+			gap: 1rem;
 		}
-		
-		.beneficii {
-			padding-bottom: 0.5rem;
-			padding-left: 1rem;
-			padding-right: 1rem;
-		}
-		
-			.beneficii .container {
-			    border: 1px solid #ddd;
-				border-radius: 10px;
-				display: grid;
-				grid-template-areas:
-					'image title'
-					'image text';
-				gap: 1rem;
+
+			.beneficii .container img {
+				width: 400px;
+				grid-area: image;
+				align-self: center;
 			}
 
-				.beneficii .container img {
-					width: 400px;
-					grid-area: image;
-					align-self: center;
-				}
-
-				.beneficii .container .title {
-					grid-area:title;
-					align-self: end;
-				}
-				
-				.beneficii .container .text {
-					grid-area: text;
-					align-self: start;
-				}
-
+			.beneficii .container .title {
+				grid-area:title;
+				align-self: end;
+			}
+			
+			.beneficii .container .text {
+				grid-area: text;
+				align-self: start;
+			}
 	}
