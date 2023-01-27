@@ -33,11 +33,11 @@ The business idea is your choice.
 
 - Stage #2 (Javascript):
 	- Extend the current project by adding the following features using Javascript:
-	1. Landing page
-		1.1. Slideshow (from scratch)
-	2. Contact page
-		2.1. Implement form validation
-	3. Use a public API to show some interesting data. Call endpoint and show the data in an organized format.
+	- Landing page
+		- Slideshow (from scratch)
+	- Contact page
+		- Implement form validation
+	- Use a public API to show some interesting data. Call endpoint and show the data in an organized format.
 	* Notes
 		- A form in the contact page is added and the input data is validated using Javascript
 		- Public api examples: https://github.com/public-apis/public-apis
