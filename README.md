@@ -5,13 +5,12 @@
 ## Live version deployed here: https://tenis-de-masa-sibiu.netlify.app/
 
 ## Project Requirements:
-
 The business idea is your choice.
 
 General rules:
-	Everything must be responsive
-	Everything must work cross-browser (Chrome & Firefox)
-	Everything must work cross-device (Desktop & Mobile)
+	- Everything must be responsive
+	- Everything must work cross-browser (Chrome & Firefox)
+	- Everything must work cross-device (Desktop & Mobile)
 
 General functionality
 	Header
