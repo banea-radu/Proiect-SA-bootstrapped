@@ -2,9 +2,9 @@
 
 ## The project has been committed on the "develop" branch.
 
-# Live version deployed here: https://tenis-de-masa-sibiu.netlify.app/
+## Live version deployed here: https://tenis-de-masa-sibiu.netlify.app/
 
-# Project Requirements:
+## Project Requirements:
 
 The business idea is your choice.
 
