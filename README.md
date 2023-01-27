@@ -1,3 +1,3 @@
-Proiect pentru cursul de Associate Web Developer sustinut de Software Academy din Sibiu
+Project for the Associate Web Developer course supported by the Software Academy from Sibiu
 
-Proiectul este pe bracnh-ul "develop"
+The project is on the "develop" branch
