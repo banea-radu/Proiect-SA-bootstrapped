@@ -1,3 +1,3 @@
-Project for the Associate Web Developer course supported by the Software Academy from Sibiu
+# Project for the Web Developer course, by Software Academy from Sibiu.
 
-The project is on the "develop" branch
+# The project has been committed on the "develop" branch.
