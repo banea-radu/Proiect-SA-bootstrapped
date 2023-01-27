@@ -7,7 +7,7 @@
 ## Project Requirements:
 The business idea is your choice.
 
-General rules:
+- General rules:
 	- Everything must be responsive
 	- Everything must work cross-browser (Chrome & Firefox)
 	- Everything must work cross-device (Desktop & Mobile)
