@@ -42,4 +42,4 @@ The business idea is your choice.
 		- A form in the contact page is added and the input data is validated using Javascript
 		- Public api examples: https://github.com/public-apis/public-apis
     
-- Stage #3 (Bootstrap): try to replace most of the css code with Bootstrap library
+- Stage #3 (Bootstrap): replace most of the css code with Bootstrap framework
